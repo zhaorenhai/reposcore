@@ -18,14 +18,14 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='criticality_score',
-    version='1.0.7',
-    author='Abhishek Arya',
+    name='score_projects',
+    version='1.0.8',
+    author='Abhishek Arya,Kunpengcompute',
     author_email='',
-    description='Gives criticality score for an open source project',
+    description='Gives criticality scores for github open source projects',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/ossf/criticality-score',
+    url='https://github.com/kunpengcompute/score_projects',
     packages=setuptools.find_packages(),
     classifiers=[
         'Programming Language :: Python :: 3',
@@ -37,7 +37,7 @@ setuptools.setup(
         'python-gitlab>=2.5.0',
     ],
     entry_points={
-        'console_scripts': ['criticality_score=criticality_score.run:main'],
+        'console_scripts': ['score_projects=score_projects.score_projects:main'],
     },
     python_requires='>=3',
     zip_safe=False,
