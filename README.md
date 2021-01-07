@@ -13,14 +13,14 @@ export GITHUB_AUTH_TOKEN=<your access token>
 - 如果你还没有，[创建一个Gitlab Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
 ,设置环境变量 `GITLAB_AUTH_TOKEN`.
 
-准备工程的url列表文件，一行一个url, 格式可以参考本项目score_projects目录下的projects.txt文件
+准备工程的url列表文件，一行一个url, 格式可以参考本项目reposcore目录下的projects.txt文件
 ```shell
 pip3 uninstall python-gitlab PyGithub
 pip3 install python-gitlab PyGithub
-git clone https://github.com/kunpengcompute/score_projects
-cd score_projects
+git clone https://github.com/kunpengcompute/reposcore
+cd reposcore
 python3 setup.py install
-score_projects --projects_list projects_url_file --result_file result.csv
+reposcore --projects_list projects_url_file --result_file result.csv
 ```
 最终输出为csv格式的文件
 
@@ -36,13 +36,13 @@ export GITHUB_AUTH_TOKEN=<your access token>
 For GitLab repos, you need to [create a GitLab access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) and set it in environment variable `GITLAB_AUTH_TOKEN`. 
 
 
-Prepare a projects url file, one url per line, please refer to projects.txt under directory score_projects.
+Prepare a projects url file, one url per line, please refer to projects.txt under directory reposcore.
 ```shell
 pip3 uninstall python-gitlab PyGithub
 pip3 install python-gitlab PyGithub
-git clone https://github.com/kunpengcompute/score_projects
-cd score_projects
+git clone https://github.com/kunpengcompute/reposcore
+cd reposcore
 python3 setup.py install
-score_projects --projects_list projects_url_file --result_file result.csv
+reposcore --projects_list projects_url_file --result_file result.csv
 ```
 The final output is a csv format file.

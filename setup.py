@@ -18,14 +18,14 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='score_projects',
-    version='1.0.8',
+    name='reposcore',
+    version='1.0.9',
     author='Abhishek Arya,Kunpengcompute',
     author_email='',
     description='Gives criticality scores for github open source projects',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/kunpengcompute/score_projects',
+    url='https://github.com/kunpengcompute/reposcore',
     packages=setuptools.find_packages(),
     classifiers=[
         'Programming Language :: Python :: 3',
@@ -37,7 +37,7 @@ setuptools.setup(
         'python-gitlab>=2.5.0',
     ],
     entry_points={
-        'console_scripts': ['score_projects=score_projects.score_projects:main'],
+        'console_scripts': ['reposcore=reposcore.score_projects:main'],
     },
     python_requires='>=3',
     zip_safe=False,
