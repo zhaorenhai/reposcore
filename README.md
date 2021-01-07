@@ -36,7 +36,7 @@ export GITHUB_AUTH_TOKEN=<your access token>
 For GitLab repos, you need to [create a GitLab access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) and set it in environment variable `GITLAB_AUTH_TOKEN`. 
 
 
-Prepare a projects url file, one url per line, the format please refer projects.txt under directory score_projects
+Prepare a projects url file, one url per line, please refer to projects.txt under directory score_projects for format.
 ```shell
 pip3 uninstall python-gitlab PyGithub
 pip3 install python-gitlab PyGithub
